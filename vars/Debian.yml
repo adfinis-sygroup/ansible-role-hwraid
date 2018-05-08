@@ -17,8 +17,8 @@ hwraid_apt_le_vert_repository: 'deb http://hwraid.le-vert.net/{{ ansible_distrib
 
 # HP raid controller tools
 hwraid_hp_raid_packages:
-  - hpacucli
-  - hpssacli
+  - ssa
+  - ssacli
   - nagios-plugins-contrib
 
 # IBM raid controller tools

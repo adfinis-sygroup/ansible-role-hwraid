@@ -12,9 +12,9 @@ hwraid_yum_hp_repository:
 
 # HP raid controller tools
 hwraid_hp_raid_packages:
-  - ssaducli
-  - ssacli
   - ssa
+  - ssacli
+  - ssaducli
 
 # IBM raid controller tools
 hwraid_ibm_raid_packages: []

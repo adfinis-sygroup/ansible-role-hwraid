@@ -10,7 +10,7 @@ hwraid_apt_le_vert_keys:
   - http://hwraid.le-vert.net/debian/hwraid.le-vert.net.gpg.key
 
 # HP apt repository
-hwraid_apt_hp_repository: 'deb http://downloads.linux.hpe.com/SDR/repo/mcp/{{ ansible_distribution | lower }} {{ ansible_distribution_release | lower }}/current non-free'
+hwraid_apt_hp_repository: 'deb http://downloads.linux.hpe.com/SDR/repo/mcp/{{ ansible_distribution | lower }} {{ ansible_distribution_release | lower }}/{{ hwraid_hp_repository_version }}'
 
 # hwraid.le-vert.net apt repository
 hwraid_apt_le_vert_repository: 'deb http://hwraid.le-vert.net/{{ ansible_distribution | lower }} {{ ansible_distribution_release | lower }} main'
@@ -19,6 +19,7 @@ hwraid_apt_le_vert_repository: 'deb http://hwraid.le-vert.net/{{ ansible_distrib
 hwraid_hp_raid_packages:
   - ssa
   - ssacli
+  - ssaducli
   - nagios-plugins-contrib
 
 # IBM raid controller tools

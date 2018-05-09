@@ -5,16 +5,16 @@ hwraid_yum_hp_repository:
   name: hpe
   file: HPE
   description: CentOS-$releasever - HP Raid Controller
-  baseurl: http://downloads.linux.hpe.com/SDR/repo/mcp/CentOS/$releasever/$basearch/current
+  baseurl: http://downloads.linux.hpe.com/SDR/repo/mcp/CentOS/$releasever/$basearch/{{ hwraid_hp_repository_version }}
   gpgcheck: yes
   repo_gpgcheck: no
   gpgkey: http://downloads.linux.hpe.com/SDR/hpePublicKey2048_key1.pub
 
 # HP raid controller tools
 hwraid_hp_raid_packages:
-  - ssaducli
-  - ssacli
   - ssa
+  - ssacli
+  - ssaducli
 
 # IBM raid controller tools
 hwraid_ibm_raid_packages: []

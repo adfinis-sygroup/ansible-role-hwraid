@@ -31,6 +31,11 @@ that can/should be set via parameters to the role. Any variables that are read
 from other roles and/or the global scope (ie. hostvars, group vars, etc.)
 should be mentioned here as well.
 
+- **hwraid_hp_repository_version**: Specify the version of HPE's Management
+  Component Pack (MCP) repository to be used. The default value ``current``
+  includes the latest available version available for the distribution
+  version. Override if you need specific releases of HPE binary-only utilities.
+  For details see `HPE's description about the MCP repository<https://downloads.linux.hpe.com/SDR/project/mcp/>`_.
 
 Dependencies
 =============

@@ -3,6 +3,7 @@
 dependencies: []
 
 galaxy_info:
+  role_name: hwraid
   author: 'Adfinis SyGroup AG'
   description: 'Hardware Raid management tools'
   company: 'Adfinis SyGroup AG'
